@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap');
+
+:root{
+    --red-rjaro:#bb0808;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------ */
+/* all basics */
+html{
+    /* احدد حجم ثابت بحيث rem يضرب في ١٠ ويعطي الحجم اللي اباه */
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+h3{ 
+    font-size: 2rem;
+    line-height: 1.8; /* الارتفاع */
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    line-height: 2; /* الارتفاع */
+}
+
+/* ------------------------------------------------ */
+/* nav section */
+.nav-container {
+    background: rgb(194, 0, 0);
+    color: black;
+}
+
+nav{
+    width: 90%; /* يزحف تقريبا ٩٠ بالميه */
+    margin: 0 auto;
+    max-width: 1366px; /* القوائم تاخد مساحات ثابته ماتتغير حتى لو صغرت الشاشه */
+    display: flex; /* كل قائمه تكون لحال */
+    justify-content: space-between; /* يوزع المحتويات على الطرفين */ 
+    align-items: center;  /* يوزع القوائم في النص */
+    min-height: 10vh;
+    font-size: 16px;
+}
+
+nav .logo{
+    width: 20rem;
+}
+
+nav ul{
+    display: flex; /* كل قائمه تكون لحال */
+    list-style-type: none; /* يشيل النقاط */
+    justify-content: space-between; 
+}
+
+nav ul li a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none; /* نشيل الخط اللي تحت العناويين فوق */
+    padding-left: 4rem;
+} 
+
+nav ul li a:hover{
+    color: rgb(160, 160, 160);
+} 
+
+
+
+/* -------------------------------------------------------------------------------------- */
+/* cars.html */
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background:rgb(255, 255, 255);
+}
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 9rem;
+}
+
+.home .home-slider .slide .image{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    size: 80px;
+    width: 100%;
+}
+
+.home .home-slider .slide .content h3{
+    color: black;
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .content p{
+    color: rgb(198, 0, 0);
+    font-size: 2rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--red-rjaro);
+}
+
+
+/* ------------------------------------------------------ */
+/* list of cars */
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    margin-bottom: 80px;
+}
+
+.product{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+
+.product img{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+}
+
+.product .title{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+ .product .description{
+    padding: 0 20px 20px 20px;
+    line-height: 22px;
+    text-align: left;
+    font-weight: bold;
+ }
+
+ .btn{
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: rgb(194, 0, 0);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+    border: none;
+}
+
+.btn:hover{
+    background: rgb(160, 160, 160);
+    letter-spacing: .1rem;
+}
+
+.btn a{
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:active{ 
+    transform: scale(0.98);
+}
+
+ .view-more{
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 20px;
+    text-align: center;
+ }
+ .view-more button{
+    padding: 10px 25px;
+ }
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background:#eee;
+    }
+
+    #search-form #search-box{
+        width:90%;
+        margin:0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .dishes .box-container .box img{
+        height:auto;
+        width: 100%;
+    }
+
+    .order form .inputBox .input{
+        width:100%;
+    }
+
+}
+

@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap');
+
+body{
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+
+html{
+    /* احدد حجم ثابت بحيث rem يضرب في ١٠ ويعطي الحجم اللي اباه */
+    font-size: 10px;
+}
+
+.box {
+    margin-top: 10rem;
+    font-size: 20px;
+}
+
+/* nav section */
+.nav-container {
+    background: rgb(194, 0, 0);
+    color: black;
+}
+
+nav{
+    width: 90%; /* يزحف تقريبا ٩٠ بالميه */
+    margin: 0 auto;
+    max-width: 1366px; /* القوائم تاخد مساحات ثابته ماتتغير حتى لو صغرت الشاشه */
+    display: flex; /* كل قائمه تكون لحال */
+    justify-content: space-between; /* يوزع المحتويات على الطرفين */ 
+    align-items: center;  /* يوزع القوائم في النص */
+    min-height: 10vh;
+    font-size: 16px;
+}
+
+nav .logo{
+    width: 20rem;
+}
+
+nav ul{
+    display: flex; /* كل قائمه تكون لحال */
+    list-style-type: none; /* يشيل النقاط */
+    justify-content: space-between; 
+}
+
+nav ul li a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none; /* نشيل الخط اللي تحت العناويين فوق */
+    padding-left: 4rem;
+    font-family: 'Tajawal', sans-serif;
+} 
+
+nav ul li a:hover{
+    color: rgb(160, 160, 160);
+} 

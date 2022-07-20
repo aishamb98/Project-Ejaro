@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap');
+
+:root{
+    --red-rjaro:#bb0808;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------ */
+/* all basics */
+html{
+    /* احدد حجم ثابت بحيث rem يضرب في ١٠ ويعطي الحجم اللي اباه */
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+h3{ 
+    font-size: 2rem;
+    line-height: 1.8; /* الارتفاع */
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    line-height: 2; /* الارتفاع */
+}
+
+/* ------------------------------------------------ */
+/* nav section */
+.nav-container {
+    background: rgb(194, 0, 0);
+    color: black;
+}
+
+nav{
+    width: 90%; /* يزحف تقريبا ٩٠ بالميه */
+    margin: 0 auto;
+    max-width: 1366px; /* القوائم تاخد مساحات ثابته ماتتغير حتى لو صغرت الشاشه */
+    display: flex; /* كل قائمه تكون لحال */
+    justify-content: space-between; /* يوزع المحتويات على الطرفين */ 
+    align-items: center;  /* يوزع القوائم في النص */
+    min-height: 10vh;
+    font-size: 16px;
+}
+
+nav .logo{
+    width: 20rem;
+}
+
+nav ul{
+    display: flex; /* كل قائمه تكون لحال */
+    list-style-type: none; /* يشيل النقاط */
+    justify-content: space-between; 
+}
+
+nav ul li a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none; /* نشيل الخط اللي تحت العناويين فوق */
+    padding-left: 4rem;
+} 
+
+nav ul li a:hover{
+    color: rgb(160, 160, 160);
+} 
+
+/* ------------------------------------------ */
+/* details.html */
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    margin-bottom: 80px;
+}
+
+.product{
+    display: flex;
+    margin-top: 20px;
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);  
+    width: 100%;  
+}
+
+
+.product img{
+    height: 100%;
+    width: 100%;
+    padding:.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+}
+
+
+.single-pro-img {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.single-pro-group{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-pro-col{
+    display: flex;
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+.single-pro-details .title{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.single-pro-details .description{
+    padding: 0 20px 20px 20px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btnToCarDetails{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.btn{
+    font-size: 1.7rem;
+    color:#fff;
+    background: rgb(194, 0, 0);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+    border: none;
+    justify-content: center;
+}
+
+.btn:hover{
+    background: rgb(160, 160, 160);
+    letter-spacing: .1rem;
+}
+
+.btn a{
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:active{ 
+    transform: scale(0.98);
+}
+

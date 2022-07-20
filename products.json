@@ -1,0 +1,90 @@
+[
+    {
+        "Make" : "Haval H6",
+        "Model" : 2021,
+        "KM" : 45,
+        "Latitude" : 34,
+        "Longitude" : 98,
+        "ImgUrl" : [
+        "https://res.cloudinary.com/ejaro/image/upload/v1656932996/car/production/fbigm81wqss7itpfzznu.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1656932994/car/production/mn69dgl7wlakskq0ic4m.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1656932994/car/production/fa0zkhljc21ej4gzzic6.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1656932996/car/production/hzgzum87blnb8wapekta.jpg"
+        ],
+        "description" : "نيو هافال H6. محرك رائع ومريح للغاية. تم تضمين جميع الميزات",
+        "color" : "Black",
+        "Available_From" : "2022-08-05",
+        "Available_Until" : "2022-08-28"
+    },
+
+    {
+        "Make" : "Dodge Challenger",
+        "Model" : 2018,
+        "KM" : 34,
+        "Latitude" : 21.7114705,
+        "Longitude" : 39.1185473,
+        "ImgUrl" : ["https://res.cloudinary.com/ejaro/image/upload/v1656886740/car/production/bepvn1fsukvynwkli5kg.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1656886738/car/production/wxjnhhz3wfvuetxj4ocw.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1656886738/car/production/arfy71b6iz3aqsekfjp7.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1656886738/car/production/ttu019eslqua39v28287.jpg"
+        ],
+        "description" : "سيارة دوج شالنجر الرياضيه من الطراز الاثري الجميل لون اصفر كلاسيك",
+        "color" : "Yellow",
+        "Available_From" : "2022-07-19",
+        "Available_Until" : "2022-08-08"
+
+    },
+
+    {
+        "Make" : "Mercedes-Benz SLC",
+        "Model" : 2018,
+        "KM" : 65,
+        "Latitude" : 21.6142542,
+        "Longitude" : 39.1146586,
+        "ImgUrl" : ["https://res.cloudinary.com/ejaro/image/upload/v1654310224/production/car/2947/images/ehzokef9ywkjacudy9st.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1654310056/production/car/2947/images/z0ywioop5jq1l84bufk1.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1654310880/production/car/2947/images/wywmgctotwsvnav6l7vw.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1654310662/production/car/2947/images/usz7wqjv4bi7cegrdrqt.jpg"
+        ],
+        "description" : " مرسيدس كوب كشف حديد مناسب لجميع الاوقات + تقديم خدمه تزيين وتشريع السياره برسوم اضافيه مناسبه للجميع لمناسبات الافراح والزواج والله يديم الفرح والسرور للجميع يا رب",
+        "color" : "Blue",
+        "Available_From" : "2022-07-17",
+        "Available_Until" : "2022-08-23"
+    },
+
+    {
+        "Make" : "BMW X5",
+        "Model" : 2020,
+        "KM" : 156,
+        "Latitude" : 45,
+        "Longitude" : 34,
+        "ImgUrl" : [
+        "https://res.cloudinary.com/ejaro/image/upload/v1654147042/Car/production/bovhtxehjfylwpp56khh.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1654148190/Car/production/izkewp4mopexknvicqyn.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1654113097/production/car/3060/images/sutorvr2ynlw2etnuoso.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1654149129/Car/production/yct8mnwrc7wvfvznkkvy.jpg"
+        ],
+        "description" : "السياره مقاعدها مريحه وسهله في القياده ومريحه , البنزين 95 ويتم صيانه الكفرات بشكل دوري",
+        "color" : "White",
+        "Available_From" : "2022-07-20",
+        "Available_Until" : "2022-09-09"
+
+    },
+    {
+        "Make" : "Land Rover Range",
+        "Model" : 2020,
+        "KM" : 76,
+        "Latitude" : 45,
+        "Longitude" : 34,
+        "ImgUrl" : [
+        "https://res.cloudinary.com/ejaro/image/upload/v1623328961/car/production/ubiekif8pmwp3l7hkd6p.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1610370277/car/production/pbqw0gdpv85hdskkxx0b.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1610370301/car/production/b3fnqbdfqizbicwywcg4.jpg",
+        "https://res.cloudinary.com/ejaro/image/upload/v1610370263/car/production/thggjls1dda4ogjsct2x.jpg"
+        ],
+        "description" : "الإصدار الأسود الجديد من R-Dynamic Velar ، مريح للغاية للقيادة وسلس على الطريق",
+        "color" : "Gray",
+        "Available_From" : "2022-07-19",
+        "Available_Until" : "2022-08-09"
+    }
+] 
